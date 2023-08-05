@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <script>
+            function check(){
+                var usn = document.getElementById("usn");
+                var pswd = document.getElementById("password");
+                var slct = document.getElementById("loginas");
+                if((pswd.value.length)<6){
+                    alert("Password need to at least 6 charactors");
+                }
+                if((usn.value)==""){
+                    alert("Plese fill your username.");
+                }
+                if((pswd.value)==""){
+                    alert("Please enter your password.");
+                }
+                if((slct.value)==""){
+                    alert("Plese select login as field.");
+                }
+            }
+        </script>
+
+    </head>
+    <body>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        Login as:
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="loginas" id="loginas">
+                            <option value="">Select here</option>
+                            <option value="student">Student</option>
+                            <option value="staff">Staff</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        USN
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="usn" id="usn">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Password
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="password" name="password" id="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Login" onclick="check()">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Forget <a href="new.html">Password?</a>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
