@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <form action="2.php" name="reg" method="post">
+            <h1>Registration Form</h1>
+            <table>
+                    <tr>
+                        <td>first name:</td>
+                        <td><input type="text" name="fname"><br></td>
+                    </tr>
+                    <tr>
+                        <td>last name:</td>
+                        <td><input type="text" name="lname"><br></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Number:</td>
+                        <td><input type="number" name="telNo"></td>
+                    </tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td>
+                            <input type="radio" name="gender" value="male">Male
+                            <input type="radio" name="gender" value="female">Female <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" name="email"><br></td>
+                    </tr>
+                    <tr>
+                        <td>Additional details:</td>
+                        <td><textarea name="additional" cols="30" rows="3"></textarea><br></td>
+                    </tr>
+                    <tr>
+                        <td>Favourite Music:</td>
+                        <td>
+                            <input type="checkbox" name="music[]" value="pop">POP
+                            <input type="checkbox" name="music[]" value="rock">ROCK
+                            <input type="checkbox" name="music[]" value="other">Other <br>
+                        </td>
+                    </tr>
+                        <td colspan="2">
+                            <input type="checkbox" name="condition" value="agreed">
+                            I agree to the tearms & conditions.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Submit"></td>
+                        <td><input type="reset" value="Reset"></td>
+                    </tr>
+            </table>
+            
+        </form>
+    </body>
+</html>
