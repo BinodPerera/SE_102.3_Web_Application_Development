@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            Email validation check
+        </title>
+        <script>
+            //this is JavaScript function
+            function val(){
+                var ele = document.getElementById("email").value;//getting value of email input and assign it value to 'ele' varable
+                if((!(ele.includes("@"))) || (!(ele.includes(".")))){// every email includes . or @ so we checking if . or @ is include or not include
+                    alert("This is not an email. please try again");//if condition is true this will be display in alert box
+                }
+                else{
+                    alert("This is valid email.");//if condiotion is not true this will be running
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <label for="email">Enter your email address:</label>
+            <input type="text" name="email" id="email">
+            <input type="button" value="Check validation" onclick="val()">
+        </form>
+    </body>
+</html>
