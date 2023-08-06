@@ -43,7 +43,8 @@
     foreach ($array as $singleValue){     //  getting single values from array
         echo $singleValue," / ";  //  display $e variable value
     }
-    echo "<br>Tearms & conditions: ",$condition,"<br>";
+    echo "<br>Tearms & conditions: ",$condition,"<be>";
 
+    //closing the connection
     $con->close();
 ?>
