@@ -23,13 +23,13 @@
     $array = $_REQUEST["music"];
     $condition = $_REQUEST["condition"];
 
-                /*      Adding values to database       */
-    // 'employee' is table name, 'firstname' & 'telNo' are cloumns is the employee table
-    // $sql = "INSERT INTO employee (firstname, telNo) VALUES ('$fname', '$mobileNo')";
-    // $result = $con->query($sql);
+    /* Adding values to the database */
+    // 'employee' is the table name, 'firstname' & 'telNo' are cloumns is the employee table
+    $sql = "INSERT INTO employee (firstname, telNo) VALUES ('$fname', '$mobileNo')";
+    $result = $con->query($sql);
 
-    // 
-    $sql = "UPDATE employee SET telNo = $mobileNo WHERE firstname = $fname";
+    //update data in the record. 
+    //$sql = "UPDATE employee SET telNo = $mobileNo WHERE firstname = $fname";
     //$result = $con->query($sql);
     
 
