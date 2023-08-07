@@ -10,7 +10,7 @@
 
     // Check the connection
     if ($con->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
+        die("Connection failed: " . $con->connect_error);
     }
 
     //getting values from form
